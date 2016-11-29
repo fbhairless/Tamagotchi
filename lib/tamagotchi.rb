@@ -31,4 +31,8 @@ class Tamagotchi
   end
 end
 
+  define_method(:set_food_level) do |number|
+    @food_level = number
+
+  end
 end
