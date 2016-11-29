@@ -44,7 +44,7 @@ end
   describe("#lived_for") do
     it("return the elapsed time spent alive in seconds") do
       my_pet = Tamagotchi.new("lil dragon",10, 10, 10, 235)
-      expect(my_pet.lived_for()).to(eq(265))
+      expect(my_pet.lived_for()).to(eq(0))
     end
   end
 end

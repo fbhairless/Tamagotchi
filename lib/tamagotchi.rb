@@ -48,4 +48,9 @@ end
     else
   end
 end
+
+  define_method(:lived_for) do
+    time_elapsed = Time.now().to_i - @birth_time.to_i()
+    time_elapsed
+  end
 end
