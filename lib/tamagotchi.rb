@@ -53,12 +53,12 @@ end
     current_time = Time.now().to_i
     elapsed_time = current_time - @birth_time.to_i()
     if @@last_eaten == @birth_time
-      @food_level = @food_level - (elapsed_time/10)
+      @food_level = @food_level - (elapsed_time / 10)
       @@last_eaten = Time.new()
       @food_level
     else
       elapsed_time = current_time - @@last_eaten.to_i()
-      @food_level = @food_level - (elapsed_time/10)
+      @food_level = @food_level - (elapsed_time / 10)
       @@last_eaten = Time.new()
       @food_level
     end
