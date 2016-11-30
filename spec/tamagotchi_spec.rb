@@ -36,6 +36,7 @@ end
   describe("#time_passes") do
     it('decrease the food_level by 1 a set period of time') do
       my_pet = Tamagotchi.new("lil dragon",10, 10, 10, 235)
+      sleep(10)
       my_pet.time_passes()
       expect(my_pet.food_level()).to(eq(9))
     end
@@ -44,7 +45,11 @@ end
   describe("#lived_for") do
     it("return the elapsed time spent alive in seconds") do
       my_pet = Tamagotchi.new("lil dragon",10, 10, 10, 235)
-      expect(my_pet.lived_for()).to(eq(0))
+      sleep(10)
+      expect(my_pet.lived_for()).to(eq(10))
     end
   end
+
 end
+
+# new_thing = Tamagotchi.new("lil dragon",10, 10, 10, Time.now())
